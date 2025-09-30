@@ -5,6 +5,10 @@
   <description>fr3 Resources used for MoveIt testing</description>
 
   <author email="dmalexa5@ncsu.edu">David Alexander</author>
+
+  <maintainer email="dmalexa5@ncsu.edu">David Alexander</maintainer>
+
+  <license>Apache-2.0</license>
   
   <buildtool_depend>ament_cmake</buildtool_depend>
 
