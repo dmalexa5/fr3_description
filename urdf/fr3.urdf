@@ -15,6 +15,12 @@
                 <mesh filename="package://fr3_description/meshes/collision/stationary_platform.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0172 0.0004 0.0745"/>
+            <!-- Exact inertials for stationary joint shouldnt matter that much for now -->
+            <mass value="5.500"/> 
+            <inertia ixx="0.009" ixy="0.0" ixz="0.002" iyy="0.0115" iyz="0.0" izz="0.0085"/>
+        </inertial>
     </link>
     <link name="fr3_link0">
         <visual>
@@ -27,6 +33,12 @@
                 <mesh filename="package://fr3_description/meshes/collision/moving_platform.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0172 0.0004 0.0745"/>
+            <!-- TODO: Update this with the mass of the moving platform attatched -->
+            <mass value="2.3966"/>
+            <inertia ixx="0.009" ixy="0.0" ixz="0.002" iyy="0.0115" iyz="0.0" izz="0.0085"/>
+        </inertial>
     </link>
     <joint name="fr3_joint_linear" type="prismatic">
         <parent link="fr3_link_stationary"/>
@@ -46,6 +58,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link1.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0000004128 -0.0181251324 -0.0386035970"/>
+            <mass value="2.9274653454"/>
+            <inertia ixx="0.023927316485107913" ixy="1.3317903455714081e-05" ixz="-0.00011404774918616684" iyy="0.0224821613275756" iyz="-0.0019950320628240115" izz="0.006350098258530016"/>
+        </inertial>
     </link>
     <joint name="fr3_joint1" type="revolute">
         <origin rpy="0 0 0" xyz="0 0 0.333" />
@@ -65,6 +82,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link2.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0031828864 -0.0743221644 0.0088146084"/>
+            <mass value="2.9355370338"/>
+            <inertia ixx="0.041938946257609425" ixy="0.00020257331521090626" ixz="0.004077784227179924" iyy="0.02514514885014724" iyz="-0.0042252158006570156" izz="0.06170214472888839"/>
+        </inertial>
     </link>
     <joint name="fr3_joint2" type="revolute">
         <origin rpy="-1.57079632679 0 0" xyz="0 0 0" />
@@ -84,6 +106,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link3.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0407015686 -0.0048200565 -0.0289730823"/>
+            <mass value="2.2449013699"/>
+            <inertia ixx="0.02410142547240885" ixy="0.002404694559042109" ixz="-0.002856269270114313" iyy="0.01974053266708178" iyz="-0.002104212683891874" izz="0.019044494482244823"/>
+        </inertial>
     </link>
     <joint name="fr3_joint3" type="revolute">
         <origin rpy="1.57079632679 0 0" xyz="0 -0.316 0" />
@@ -103,6 +130,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link4.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0459100965 0.0630492960 -0.0085187868"/>
+            <mass value="2.6155955791"/>
+            <inertia ixx="0.03452998321913202" ixy="0.01322552265982813" ixz="0.01015142998484113" iyy="0.028881621933049058" iyz="-0.0009762833870704552" izz="0.04125471171146641"/>
+        </inertial>
     </link>
     <joint name="fr3_joint4" type="revolute">
         <origin rpy="1.57079632679 0 0" xyz="0.0825 0 0" />
@@ -122,6 +154,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link5.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0016039605 0.0292536262 -0.0972965990"/>
+            <mass value="2.3271207594"/>
+            <inertia ixx="0.051610278463662895" ixy="-0.005715173387783472" ixz="-0.0035673167625872135" iyy="0.04787729713371481" iyz="0.010673985108535986" izz="0.016423625579357254"/>
+        </inertial>
     </link>
     <joint name="fr3_joint5" type="revolute">
         <origin rpy="-1.57079632679 0 0" xyz="-0.0825 0.384 0" />
@@ -141,6 +178,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link6.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0597131221 -0.0410294666 -0.0101692726"/>
+            <mass value="1.8170376524"/>
+            <inertia ixx="0.005412333594383447" ixy="0.006193456360285834" ixz="0.0014219289306117652" iyy="0.014058329545509979" iyz="-0.0013140753741120031" izz="0.016080817924212554"/>
+        </inertial>
     </link>
     <joint name="fr3_joint6" type="revolute">
         <origin rpy="1.57079632679 0 0" xyz="0 0 0" />
@@ -160,6 +202,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/link7.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0045225817 0.0086261921 -0.0161633251"/>
+            <mass value="0.6271432862"/>
+            <inertia ixx="0.00021092389150104718" ixy="-2.433299114461931e-05" ixz="4.564480393778983e-05" iyy="0.00017718568002411474" iyz="8.744070223226438e-05" izz="5.993190599659971e-05"/>
+        </inertial>
     </link>
     <joint name="fr3_joint7" type="revolute">
         <origin rpy="1.57079632679 0 0" xyz="0.088 0 0" />
@@ -191,6 +238,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/hand.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0000376 0.0119128 0.0207260"/>
+            <mass value="0.6544"/>
+            <inertia ixx="0.00186" ixy="0.0" ixz="0.0" iyy="0.0003" iyz="-2e-05" izz="0.00174"/>
+        </inertial>
     </link>
     <link name="fr3_leftfinger">
         <visual>
@@ -203,6 +255,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/finger.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0.0152850 0.0219675"/>
+            <mass value="0.0291"/>
+            <inertia ixx="8.49e-06" ixy="0.0" ixz="0.0" iyy="8.53e-06" iyz="-1.06e-06" izz="1.77e-06"/>
+        </inertial>
     </link>
     <link name="fr3_rightfinger">
         <visual>
@@ -217,6 +274,11 @@
                 <mesh filename="package://fr3_description/meshes/collision/finger.stl" />
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0.0152850 0.0219675"/>
+            <mass value="0.0291"/>
+            <inertia ixx="8.49e-06" ixy="0.0" ixz="0.0" iyy="8.53e-06" iyz="-1.06e-06" izz="1.77e-06"/>
+        </inertial>
     </link>
     <joint name="fr3_finger_joint1" type="prismatic">
         <parent link="fr3_hand" />
