@@ -45,8 +45,9 @@
         <child link="fr3_link0"/>
         <origin rpy="0 0 0" xyz="0.051 0.1202 0.0764"/>
         <axis xyz="0 1 0"/>
-        <limit effort="87.0" lower="0.0" upper="0.72" velocity="0.5"/>
-		<dynamics damping="0.05" friction="0.2"/>
+        <!-- Will need to update with actual params later -->
+        <limit effort="200.0" lower="0.0" upper="0.72" velocity="0.75"/>
+		<dynamics damping="0.01" friction="0.1"/>
 	</joint>
     <link name="fr3_link1">
         <visual>
@@ -71,7 +72,7 @@
         <child link="fr3_link1" />
         <axis xyz="0 0 1" />
         <limit effort="87" lower="-2.9671" upper="2.9671" velocity="2.3925" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link2">
         <visual>
@@ -96,7 +97,7 @@
         <child link="fr3_link2" />
         <axis xyz="0 0 1" />
         <limit effort="87" lower="-1.8326" upper="1.8326" velocity="2.3925" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link3">
         <visual>
@@ -121,7 +122,7 @@
         <child link="fr3_link3" />
         <axis xyz="0 0 1" />
         <limit effort="87" lower="-2.9671" upper="2.9671" velocity="2.3925" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link4">
         <visual>
@@ -146,7 +147,7 @@
         <child link="fr3_link4" />
         <axis xyz="0 0 1" />
         <limit effort="87" lower="-3.1416" upper="0.0873" velocity="2.3925" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link5">
         <visual>
@@ -171,7 +172,7 @@
         <child link="fr3_link5" />
         <axis xyz="0 0 1" />
         <limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link6">
         <visual>
@@ -196,7 +197,7 @@
         <child link="fr3_link6" />
         <axis xyz="0 0 1" />
         <limit effort="12" lower="-0.0873" upper="3.8223" velocity="2.8710" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link7">
         <visual>
@@ -221,7 +222,7 @@
         <child link="fr3_link7" />
         <axis xyz="0 0 1" />
         <limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
-    	<dynamics damping="0.003" friction="0.2"/>
+    	<dynamics damping="0.003" friction="0.1"/>
 	</joint>
     <link name="fr3_link8" />
     <joint name="fr3_joint8" type="fixed">
